@@ -1,0 +1,161 @@
+/* Full Page Background */
+.register-screen {
+  background: linear-gradient(135deg, #FF7F50, #FFEC4E);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Centered Form Container */
+.register-form {
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Fields & Selects */
+.form-input,
+.form-select,
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Labels */
+.form-label,
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Checkbox Group Styling */
+.service-checkbox,
+.register-form .checkbox-group {
+  margin-bottom: 8px;
+}
+
+/* Button Base */
+.btn,
+.register-form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* Orange Button (Register) */
+.btn-primary,
+.register-form button:first-of-type {
+  background-color: #f57224;
+  color: white;
+}
+
+/* Gray Button (Login) */
+.btn-secondary,
+.register-form button:last-of-type {
+  background-color: #6c757d;
+  color: white;
+}
+
+.register-container {
+  /* width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; */
+  width: 75%;
+  max-width: 1400px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-label {
+  text-align: left;
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.service-checkbox {
+  margin: 5px 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #FF7F50;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e0663d;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: black;
+}
+
+@media (max-width: 600px) {
+
+  .register-container,
+  .register-form {
+    padding: 20px 16px;
+    margin: 20px auto;
+  }
+
+  .btn {
+    padding: 10px 14px;
+  }
+}

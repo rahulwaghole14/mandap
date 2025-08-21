@@ -172,6 +172,20 @@ const Home = () => {
           <h2 style={styles.welcomeText}>Welcome, Admin</h2>
           <div style={{ display: 'flex', gap: '10px' }}>
             <button 
+              onClick={() => navigate('/register')} 
+              style={{
+                background: '#2196F3',
+                color: '#fff',
+                border: 'none',
+                padding: '8px 15px',
+                borderRadius: '5px',
+                cursor: 'pointer',
+                fontFamily: 'Roboto, sans-serif'
+              }}
+            >
+              Register Company
+            </button>
+            <button 
               onClick={() => navigate('/contacts', { state: { token } })} 
               style={{
                 background: '#4CAF50',
