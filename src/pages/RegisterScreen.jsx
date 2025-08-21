@@ -135,7 +135,31 @@ export default function RegisterScreen() {
   return (
     <div className="register-screen">
       <div className="register-container">
-        <h2>Register</h2>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center', 
+          marginBottom: '20px',
+          paddingBottom: '10px',
+          borderBottom: '1px solid #ddd'
+        }}>
+          <h2>Register</h2>
+          <button 
+            onClick={() => navigate('/home', { state: { token: 'dummy-static-token' } })}
+            style={{
+              background: '#4CAF50',
+              color: '#fff',
+              border: 'none',
+              padding: '8px 15px',
+              borderRadius: '5px',
+              cursor: 'pointer',
+              fontFamily: 'Roboto, sans-serif',
+              fontSize: '14px'
+            }}
+          >
+            Back to Home
+          </button>
+        </div>
 
         {Object.entries(form).map(([key, value]) => {
           if (key === 'taluka_id') return null;
@@ -189,8 +213,22 @@ export default function RegisterScreen() {
         >
           {isSubmitting ? 'Registering...' : 'Register'}
         </button>
-        <button className="btn btn-secondary" onClick={() => navigate('/login')}>
-          Back to Login
+        <button 
+          className="btn btn-secondary" 
+          onClick={() => {
+            setForm({
+              company_name: '',
+              poc_name: '',
+              address: '',
+              taluka_id: '',
+              email: '',
+              contact_number: '',
+              password: '',
+            });
+            setSelectedServices([]);
+          }}
+        >
+          Reset
         </button>
       </div>
     </div>
